@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Downloader</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+    <header>
+        <h1>Image Downloader</h1>
+        <button id="themeToggle" class="theme-btn">🌙</button>
+    </header>
+
+    <div class="card">
+        <label>URL страницы:</label>
+        <input id="pageUrl" type="text" placeholder="https://example.com">
+
+        <label>Минимальный размер (ширина × высота):</label>
+        <div class="size-inputs">
+            <input id="minW" type="number" placeholder="100" value="100">
+            <span>×</span>
+            <input id="minH" type="number" placeholder="100" value="100">
+        </div>
+
+        <label class="checkbox">
+            <input type="checkbox" id="filterPng"> Не скачивать PNG с прозрачностью
+        </label>
+
+        <button id="downloadBtn" class="main-btn">Скачать изображения</button>
+
+        <div id="status"></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

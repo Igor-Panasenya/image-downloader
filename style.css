@@ -1,0 +1,100 @@
+:root {
+    --bg: #f7f7f7;
+    --text: #222;
+    --card: #ffffff;
+    --border: #ddd;
+    --btn-bg: #007bff;
+    --btn-text: white;
+    --transition: 0.3s ease;
+}
+
+body.dark {
+    --bg: #181818;
+    --text: #eee;
+    --card: #242424;
+    --border: #333;
+    --btn-bg: #3391ff;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    transition: background var(--transition), color var(--transition);
+}
+
+.container {
+    width: 480px;
+    margin: 40px auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    border-radius: 12px;
+    transition: var(--transition);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 14px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    border-radius: 8px;
+    transition: var(--transition);
+}
+
+.size-inputs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-btn {
+    width: 100%;
+    background: var(--btn-bg);
+    padding: 12px;
+    color: var(--btn-text);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.main-btn:hover {
+    opacity: 0.9;
+}
+
+.theme-btn {
+    background: none;
+    border: none;
+    font-size: 26px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.theme-btn:hover {
+    transform: rotate(20deg);
+}
+
+.checkbox {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+#status {
+    margin-top: 15px;
+    font-size: 14px;
+}
